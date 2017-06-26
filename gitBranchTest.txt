@@ -115,4 +115,35 @@ Krishna's FunPrompt $ git remote add origin https://github.com/KPAdhikari/GitTes
 Krishna's FunPrompt $ git remote -v
 origin	https://github.com/KPAdhikari/GitTests.git (fetch)
 origin	https://github.com/KPAdhikari/GitTests.git (push)
+Krishna's FunPrompt $  git commit -am "third commit"
+[master 8847f9c] third commit
+ 1 file changed, 24 insertions(+)
+Krishna's FunPrompt $ git push -u origin master
+Username for 'https://github.com': KPAdhikari
+Password for 'https://KPAdhikari@github.com': 
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 1.62 KiB | 0 bytes/s, done.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/KPAdhikari/GitTests.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Krishna's FunPrompt $ 
+
+
+
+Krishna's FunPrompt $ git checkout -b testBranch1
+M	gitBranchTest.txt
+Switched to a new branch 'testBranch1'
+Krishna's FunPrompt $ git status
+On branch testBranch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gitBranchTest.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 Krishna's FunPrompt $
