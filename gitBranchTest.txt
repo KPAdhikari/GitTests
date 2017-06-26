@@ -1,0 +1,80 @@
+Krishna's FunPrompt $ cd ../KPAdhikari/GitTests/
+Krishna's FunPrompt $ ls
+Krishna's FunPrompt $ du -sh 
+  0B	.
+Krishna's FunPrompt $ git init
+Initialized empty Git repository in /Users/kpadhikari/Desktop/BigFls/CLAS12/GitProj/KPAdhikari/GitTests/.git/
+Krishna's FunPrompt $ du -sh
+ 60K	.
+Krishna's FunPrompt $ ls -a
+.    ..   .git
+Krishna's FunPrompt $ ls -a .git/
+.           ..          HEAD        config      description hooks       info        objects     refs
+Krishna's FunPrompt $ du -sh .git/*
+4.0K	.git/HEAD
+4.0K	.git/config
+4.0K	.git/description
+ 44K	.git/hooks
+4.0K	.git/info
+  0B	.git/objects
+  0B	.git/refs
+Krishna's FunPrompt $ touch gitBranchTest.txt 
+Krishna's FunPrompt $ du -sh
+ 60K	.
+Krishna's FunPrompt $ e gitBranchTest.txt &
+[1] 10862
+Krishna's FunPrompt $ ll
+total 0
+-rw-r--r--  1 kpadhikari  staff     0B Jun 26 01:43 gitBranchTest.txt
+[1]+  Done                    open -a Emacs gitBranchTest.txt
+Krishna's FunPrompt $ ll
+total 8
+-rw-r--r--  1 kpadhikari  staff   642B Jun 26 01:44 gitBranchTest.txt
+-rw-r--r--  1 kpadhikari  staff     0B Jun 26 01:43 gitBranchTest.txt~
+Krishna's FunPrompt $  ll
+total 8
+-rw-r--r--  1 kpadhikari  staff   1.1K Jun 26 01:44 gitBranchTest.txt
+-rw-r--r--  1 kpadhikari  staff     0B Jun 26 01:43 gitBranchTest.txt~
+Krishna's FunPrompt $ m gitBranchTest.txt~
+Krishna's FunPrompt $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	gitBranchTest.txt
+	gitBranchTest.txt~
+
+nothing added to commit but untracked files present (use "git add" to track)
+Krishna's FunPrompt $ du -sh
+ 64K	.
+Krishna's FunPrompt $ git add gitBranchTest.txt
+Krishna's FunPrompt $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   gitBranchTest.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	gitBranchTest.txt~
+
+Krishna's FunPrompt $ clean
+Krishna's FunPrompt $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   gitBranchTest.txt
+
+Krishna's FunPrompt $ 
