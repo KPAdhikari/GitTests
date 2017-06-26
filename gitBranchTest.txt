@@ -77,4 +77,18 @@ Changes to be committed:
 
 	new file:   gitBranchTest.txt
 
-Krishna's FunPrompt $ 
+Krishna's FunPrompt $ Krishna's FunPrompt $ git remote -v
+Krishna's FunPrompt $ git add README.md
+fatal: pathspec 'README.md' did not match any files
+Krishna's FunPrompt $ echo "# GitTests" >> README.md
+Krishna's FunPrompt $ git add README.md
+Krishna's FunPrompt $ m README.md 
+# GitTests
+Krishna's FunPrompt $ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README.md
+
+Krishna's FunPrompt $
