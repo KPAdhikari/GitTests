@@ -146,4 +146,22 @@ Changes not staged for commit:
 	modified:   gitBranchTest.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
+Krishna's FunPrompt $ Krishna's FunPrompt $ git commit -am "first commit on testBranch1"
+[testBranch1 7673fc8] first commit on testBranch1
+ 1 file changed, 31 insertions(+)
+Krishna's FunPrompt $ git push -u testBranch1
+fatal: 'testBranch1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Krishna's FunPrompt $ git remote -v
+origin	https://github.com/KPAdhikari/GitTests.git (fetch)
+origin	https://github.com/KPAdhikari/GitTests.git (push)
+Krishna's FunPrompt $ git remote add testBranch1 https://github.com/KPAdhikari/GitTests.git
+Krishna's FunPrompt $ git remote -v
+origin	https://github.com/KPAdhikari/GitTests.git (fetch)
+origin	https://github.com/KPAdhikari/GitTests.git (push)
+testBranch1	https://github.com/KPAdhikari/GitTests.git (fetch)
+testBranch1	https://github.com/KPAdhikari/GitTests.git (push)
 Krishna's FunPrompt $
