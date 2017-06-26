@@ -161,3 +161,31 @@ To https://github.com/KPAdhikari/GitTests.git
  * [new branch]      testBranch2 -> testBranch2
 Branch testBranch2 set up to track remote branch testBranch2 from testBranch2.
 Krishna's FunPrompt $
+
+
+
+
+Krishna's FunPrompt $ git commit -am "third commit on testBranch2"
+[testBranch2 c01cc4c] third commit on testBranch2
+ 1 file changed, 15 insertions(+)
+Krishna's FunPrompt $ git push -u testBranch2
+Username for 'https://github.com': KPAdhikari
+Password for 'https://KPAdhikari@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 703 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KPAdhikari/GitTests.git
+   87a47f7..c01cc4c  testBranch2 -> testBranch2
+Branch testBranch2 set up to track remote branch testBranch2 from testBranch2.
+Krishna's FunPrompt $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Krishna's FunPrompt $ git merge testBranch2
+Updating 8847f9c..c01cc4c
+Fast-forward
+ gitBranchTest.txt | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+Krishna's FunPrompt $ 
