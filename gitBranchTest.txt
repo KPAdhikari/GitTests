@@ -116,3 +116,20 @@ Krishna's FunPrompt $ git remote -v
 origin	https://github.com/KPAdhikari/GitTests.git (fetch)
 origin	https://github.com/KPAdhikari/GitTests.git (push)
 Krishna's FunPrompt $
+
+
+
+Krishna's FunPrompt $ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	gitBranchTest.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+Krishna's FunPrompt $ git commit -am "third commit on testBranch1"
+[testBranch1 4c4c56d] third commit on testBranch1
+ 1 file changed, 30 insertions(+)
+Krishna's FunPrompt $ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Krishna's FunPrompt $ git checkout -b testBranch2
+Switched to a new branch 'testBranch2'
+Krishna's FunPrompt $ 
