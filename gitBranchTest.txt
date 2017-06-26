@@ -132,4 +132,17 @@ Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
 Krishna's FunPrompt $ git checkout -b testBranch2
 Switched to a new branch 'testBranch2'
-Krishna's FunPrompt $ 
+Krishna's FunPrompt $ git remote add testBranch2 https://github.com/KPAdhikari/GitTests.git
+Krishna's FunPrompt $ git status
+On branch testBranch2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gitBranchTest.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Krishna's FunPrompt $ git commit -am "first commit on testBranch2"
+[testBranch2 4f05d31] first commit on testBranch2
+ 1 file changed, 17 insertions(+)
+Krishna's FunPrompt $
